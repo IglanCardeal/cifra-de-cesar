@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+  font-family: 'VT323', monospace;
+  color: aqua;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 28px;
+  padding: 30px;
+  padding-top: 0px;
+  margin: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: auto;
+  min-width: 400px;
+}
+
+.App p {
+  text-align: justify;
+  text-shadow: 0 1px 1px white;
+}
+
+.App img {
+  animation: spin infinite linear;
+  animation-duration: 15s;
+  border: 2px solid grey;
+  border-radius: 100px;
+  float: left;
+  block-size: 150px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(359deg);
+  }
+}
+
+.OriginalText p {
+  text-shadow: 0 2px 2px black;
+  text-transform: lowercase;
+}
+
+

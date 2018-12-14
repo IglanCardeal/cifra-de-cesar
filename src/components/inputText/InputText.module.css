@@ -1,0 +1,21 @@
+.InputText {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.InputText input {
+  background-color: black;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 28px;
+  color: inherit;
+  font-family: inherit;
+  border-radius: 5px;
+  width: 400px;
+  height: 30px;
+  margin: 10px;
+}
+
+.InputText p {
+  text-align: center;
+}

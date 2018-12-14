@@ -1,0 +1,12 @@
+.OutputText {
+  background-color: rgba(13, 150, 150, 0.4);
+  border: 3px double black;
+  border-radius: 15px;
+  padding: 20px;
+  padding-top: 2px;
+  margin-top: 50px;
+}
+
+.OutputText p {
+  text-shadow: 0 2px 2px black;
+}
