@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import style from './App.module.css';
 
 // Componentes
-import { InputText } from '../components/inputText/InputText';
-import { OutputText } from '../components/outputText/OutputText';
-import { OriginalText } from '../components/originalText/OriginalText';
-import { Main } from '../components/main/Main';
+import  InputText  from '../components/inputText/InputText';
+import  OutputText  from '../components/outputText/OutputText';
+import  OriginalText  from '../components/originalText/OriginalText';
+import  Main  from '../components/main/Main';
 
 class App extends Component {
   state = {

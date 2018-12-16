@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './InputText.module.css';
 
-export const InputText = props => {
+const inputText = props => {
   return (
     <div className={ style.InputText }>
       <p>
@@ -14,3 +14,5 @@ export const InputText = props => {
     </div>
   )
 }
+
+export default inputText;

@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './OriginalText.module.css';
 
-export const OriginalText = props => (
+const originalText = props => (
   <div className={ style.OriginalText }>
     <h2>Texto original</h2>
     <p>
@@ -9,3 +9,5 @@ export const OriginalText = props => (
     </p>
   </div>
 )
+
+export default originalText;

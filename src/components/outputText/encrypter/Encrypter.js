@@ -1,4 +1,4 @@
-export const Encrypter = text => {
+const encrypter = text => {
   const arrayText = text.split('');
   const cryptedArray = [];
   const alfabeto = [
@@ -31,3 +31,5 @@ export const Encrypter = text => {
   });
   return cryptedArray.join('');
 }
+
+export default encrypter;

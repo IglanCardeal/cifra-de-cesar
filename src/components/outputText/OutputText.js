@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './Output.module.css';
 
-import { Encrypter } from './encrypter/Encrypter';
+import Encrypter from './encrypter/Encrypter';
 
-export const OutputText = props => {
+const outputText = props => {
   return (
     <div className={ style.OutputText }>
       <h2>Texto criptografado</h2>
@@ -13,3 +13,4 @@ export const OutputText = props => {
     </div>
   )
 }
+ export default outputText;
