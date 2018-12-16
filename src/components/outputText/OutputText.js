@@ -1,16 +1,18 @@
 import React from 'react';
+import Wrapper from '../../hoc/wrapper';
+import classes from '../../hoc/classes';
 import style from './Output.module.css';
 
 import Encrypter from './encrypter/Encrypter';
 
 const outputText = props => {
   return (
-    <div className={ style.OutputText }>
+    <Wrapper>
       <h2>Texto criptografado</h2>
       <p>
         {Encrypter(props.text)}
       </p>
-    </div>
+    </Wrapper>
   )
 }
- export default outputText;
+ export default classes(outputText, style.OutputText);

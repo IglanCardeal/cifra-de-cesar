@@ -1,13 +1,15 @@
 import React from 'react';
+import Wrapper from '../../hoc/wrapper';
+import classes from '../../hoc/classes';
 import style from './OriginalText.module.css';
 
 const originalText = props => (
-  <div className={ style.OriginalText }>
+  <Wrapper>
     <h2>Texto original</h2>
     <p>
       { props.text }
     </p>
-  </div>
+  </Wrapper>
 )
 
-export default originalText;
+export default classes(originalText, style.OriginalText);

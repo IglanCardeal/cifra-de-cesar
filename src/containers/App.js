@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import Wrapper from '../hoc/wrapper';
+import classes from '../hoc/classes';
 import style from './App.module.css';
-
 // Componentes
 import  InputText  from '../components/inputText/InputText';
 import  OutputText  from '../components/outputText/OutputText';
@@ -14,7 +15,7 @@ class App extends Component {
 
   inputTextHandler = event => {
     this.setState({
-      text: event.target.value,
+      text: event.target.value.toLowerCase(),
     })
   }
 
@@ -33,14 +34,14 @@ class App extends Component {
     }
 
     return (
-      <div className={style.App}>
+      <Wrapper>
         <Main />
         <InputText change={event => this.inputTextHandler(event)} />
         {originalText}
         {cryptedText}
-      </div>
+      </Wrapper>
     );
   }
 }
 
-export default App;
+export default classes(App, style.App);

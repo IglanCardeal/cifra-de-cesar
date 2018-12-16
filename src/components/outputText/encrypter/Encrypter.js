@@ -13,15 +13,14 @@ const encrypter = text => {
     'y', 'z',
     'a','b','c'
   ];
-
+  const notNumber = letra => isNaN(Number(letra));
   const pushing = letra => {
-    var notNumber = isNaN(Number(letra));
     for(let i = 0; i < alfabeto.length; i++){
       if(letra === alfabeto[i])
         return cryptedArray.push(alfabeto[i+3]);
       if(letra === ' ')
         return cryptedArray.push(letra);
-      if(!notNumber)
+      if(!notNumber(letra))
         return cryptedArray.push(letra);
     }
   }
@@ -29,6 +28,7 @@ const encrypter = text => {
   arrayText.forEach(letra => {
     pushing(letra);
   });
+
   return cryptedArray.join('');
 }
 

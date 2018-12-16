@@ -1,9 +1,9 @@
 import React from 'react';
-import style from './Main.module.css';
+import { mainTitle } from './Main.module.css';
 
 const main = props => (
   <div>
-    <h1 className={ style.mainTitle }>Aplicação da cifra de César</h1>
+    <h1 className={mainTitle}>Aplicação da cifra de César</h1>
       <p>
         <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="blank"><img src="cesarLogo.jpg" alt="cesar"/></a>A cifra de César é uma das mais simples e conhecidas técnicas de criptografia. É um tipo de cifra de substituição na qual cada letra do texto é substituída por outra, que se apresenta no alfabeto abaixo dela um número fixo de vezes. Por exemplo, com uma troca de três posições, A seria substituído por D, B se tornaria E, e assim por diante. O nome do método é em homenagem a Júlio César, que o usou para se comunicar com os seus generais.
         <br/>
