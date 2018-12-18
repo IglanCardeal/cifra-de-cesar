@@ -14,8 +14,11 @@ class App extends Component {
   }
 
   inputTextHandler = event => {
-    this.setState({
-      text: event.target.value.toLowerCase(),
+    let newText = event.target.value.toLowerCase();
+    this.setState(() => {
+      return {
+        text: newText,
+      }
     })
   }
 
