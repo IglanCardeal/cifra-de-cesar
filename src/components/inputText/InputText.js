@@ -4,8 +4,10 @@ import classes from '../../hoc/classes';
 import style from './InputText.module.css';
 
 class InputText extends React.Component {
+  focusOnElement = React.createRef();
+
   componentDidMount() {
-    this.focusOnElement.focus();
+    this.focusOnElement.current.focus();
   }
 
   render() {
@@ -16,7 +18,7 @@ class InputText extends React.Component {
         </p>
         <p>
           <label htmlFor="input-text">Digite algo:</label>
-          <input ref={element => {this.focusOnElement = element}} type="text" id="input-text" onChange={ this.props.change }/>
+          <input ref={this.focusOnElement} type="text" id="input-text" onChange={ this.props.change }/>
         </p>
       </Wrapper>
     )
