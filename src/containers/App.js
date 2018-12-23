@@ -23,25 +23,12 @@ class App extends Component {
   }
 
   render() {
-    let originalText = null;
-    let cryptedText = null;
-    let hasText = this.state.text.length > 0 ? true : false;
-
-    if (hasText) {
-      originalText = (
-        <OriginalText text={this.state.text} />
-      )
-      cryptedText = (
-        <OutputText text={this.state.text} />
-      )
-    }
-
     return (
       <Wrapper>
         <Main />
         <InputText change={event => this.inputTextHandler(event)} />
-        {originalText}
-        {cryptedText}
+        <OriginalText text={this.state.text} />
+        <OutputText text={this.state.text} />
       </Wrapper>
     );
   }

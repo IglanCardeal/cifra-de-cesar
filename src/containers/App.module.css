@@ -23,6 +23,8 @@
 .App img {
   animation: spin infinite linear;
   animation-duration: 15s;
+  -webkit-animation: spin infinite linear;
+  -webkit-animation-duration: 15s;
   border: 2px solid grey;
   border-radius: 100px;
   float: left;
@@ -40,9 +42,11 @@
   }
 }
 
-.OriginalText p {
-  text-shadow: 0 2px 2px black;
-  text-transform: lowercase;
+@-webkit-keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(359deg);
+  }
 }
-
-
