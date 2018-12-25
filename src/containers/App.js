@@ -22,13 +22,28 @@ class App extends Component {
     })
   }
 
+  hasText = () => {
+    let showOriginalText;
+    let showOutputText;
+    let textLength = this.state.text.length > 0 ? true : false;
+    if(textLength){
+      showOriginalText = <OriginalText text={this.state.text} />
+      showOutputText = <OutputText text={this.state.text} />
+    }
+    return (
+      <Wrapper>
+        {showOriginalText}
+        {showOutputText}
+      </Wrapper>
+    )
+  }
+
   render() {
     return (
       <Wrapper>
         <Main />
         <InputText change={event => this.inputTextHandler(event)} />
-        <OriginalText text={this.state.text} />
-        <OutputText text={this.state.text} />
+        {this.hasText()}
       </Wrapper>
     );
   }

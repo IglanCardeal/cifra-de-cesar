@@ -5,22 +5,15 @@ import style from './Output.module.css';
 
 import Encrypter from './encrypter/Encrypter';
 
-const outputText = props => {
-  let hasText = props.text.length > 0 ? true: false;
-  let cryptedText = null;
-
-  if(hasText){
-    cryptedText = Encrypter(props.text);
-    return (
-      <Wrapper>
-        <h2>Texto criptografado</h2>
-        <p>
-          { cryptedText }
-        </p>
-      </Wrapper>
-    )
-  }
-
-  return null;
+const outputText = ({text}) => {
+  let cryptedText = Encrypter(text);
+  return (
+    <Wrapper>
+      <h2>Texto criptografado</h2>
+      <p>
+        { cryptedText }
+      </p>
+    </Wrapper>
+  )
 }
  export default classes(outputText, style.OutputText);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { mainTitle } from './Main.module.css';
 
-const main = props => (
+const main = () => (
   <div>
     <h1 className={mainTitle}>Aplicação da cifra de César</h1>
       <p>
