@@ -1,8 +1,18 @@
 .OriginalText {
+  animation: enable 1s linear;
   background-color: rgba(13, 150, 150, 0.4);
   border: 3px double black;
   border-radius: 15px;
   padding: 20px;
   padding-top: 2px;
   margin-top: 50px;
+}
+
+@keyframes enable {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
